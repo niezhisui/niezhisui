@@ -1,0 +1,12 @@
+int main()
+{
+	CONSOLE_CURSOR_INFO cursor;
+	GetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor);
+	cursor.bVisible = 0;	//这四行用来设置光标不显示
+	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor);
+ 
+	srand((unsigned)time(NULL));
+ 
+	Game game;
+	game.showMenu();
+
