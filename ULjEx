@@ -1,0 +1,9 @@
+   private static void addInvoiceItem( PreparedStatement ri, int inv_no, int item_no
+                                      , int prod_no, int quantity, String price )
+        throws ULjException
+    {
+        ri.set( ORDINAL_INV_ITEM_INV_NO, inv_no );
+        ri.set( ORDINAL_INV_ITEM_ITEM_NO, item_no );
+        ri.set( ORDINAL_INV_ITEM_PROD_NO, prod_no );
+        ri.set( ORDINAL_INV_ITEM_QUANTITY, quantity );
+        ri.set( ORDINAL_INV_ITEM_PRICE, price );
