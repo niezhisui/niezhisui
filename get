@@ -1,0 +1,8 @@
+
+            boolean prepay = false; 
+            if (aUPD.getPrepayType().equals("1")) 
+                prepay = true; 
+ 
+            // Create activation and deactivation dates if provided 
+            Date activatedate = new Date(); 
+            Date deactivatedate = null; 
