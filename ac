@@ -1,0 +1,4 @@
+ boolean durable, 
+    boolean transactional, 
+    String jndiCtxFactory, 
+    String connFactory, 
